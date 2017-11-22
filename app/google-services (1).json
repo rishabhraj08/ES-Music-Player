@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "39200762264",
+    "firebase_url": "https://hardiks-83a28.firebaseio.com",
+    "project_id": "hardiks-83a28",
+    "storage_bucket": "hardiks-83a28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39200762264:android:f91653358449a327",
+        "android_client_info": {
+          "package_name": "com.example.hh.hardiks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39200762264-enor22vcpr7ishn0nn4qievjhf5on9tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmVL1UwnujtAsc2dKR8SMoEpteg1CjG_U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

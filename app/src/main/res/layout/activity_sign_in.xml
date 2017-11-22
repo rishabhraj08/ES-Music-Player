@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFF"
+    tools:context="com.example.hh.hardiks.SignInActivity">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/butnLogin"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/appicon" />
+
+    <EditText
+        android:id="@+id/signEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/prog"
+        android:layout_marginTop="24dp"
+        android:autoSizeTextType="uniform"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="false"
+        android:textColor="#ff00" />
+
+    <EditText
+        android:id="@+id/signPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/signEmail"
+        android:layout_marginTop="18dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/butnLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#f0f0"
+        android:gravity="center"
+        android:text="Login" />
+
+
+    <Button
+        android:id="@+id/FrgtPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/butnLogin"
+        android:layout_below="@+id/butnLogin"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFF"
+        android:text="@string/btn_forgot_password"
+        android:textColor="@color/colorAccent"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/SingnUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/FrgtPass"
+        android:text="Not Registered"
+        android:textColor="#FF00"
+        android:layout_marginTop="12dp"
+        android:background="#00FFFF" />
+
+    <ProgressBar
+        android:id="@+id/prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgview"
+        android:layout_below="@+id/imgview"
+        android:layout_marginStart="23dp"
+        android:visibility="gone"
+        android:layout_marginTop="14dp" />
+
+
+</RelativeLayout>

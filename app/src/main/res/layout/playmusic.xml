@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#dddddd"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/artimg"
+        android:layout_marginTop="22dp"
+        android:ellipsize="marquee"
+        android:hint="song name"
+        android:textColor="@color/colorAccent"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/text1"
+        android:layout_below="@+id/text1"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:hint="artist name"
+        android:textColor="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/artimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/ib5" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/artimg"
+        android:layout_marginTop="76dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginTop="13dp"
+        android:hint="22.00" />
+
+    <ImageButton
+        android:id="@+id/iswitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ib3"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/ib3"
+        android:src="@drawable/pause" />
+
+    <ImageButton
+        android:id="@+id/iswitch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/artimg"
+        android:layout_alignTop="@+id/ib4"
+        android:src="@drawable/ic_fast_forward_black_24dp"/>
+
+
+
+    <ImageButton
+        android:id="@+id/ib4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:layout_toStartOf="@+id/text3"
+        android:src="@drawable/ic_navigate_next_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/ib5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text3"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/ib3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ib5"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/ib5"
+        android:src="@drawable/ic_fast_rewind_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/shuf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artimg"
+        android:layout_marginTop="26dp"
+        android:layout_toStartOf="@+id/text3"
+        android:src="@drawable/shuffle" />
+
+    <ImageButton
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/shuf"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/repeat" />
+</RelativeLayout>
